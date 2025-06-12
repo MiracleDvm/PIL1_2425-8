@@ -1,0 +1,15 @@
+Django>=3.2,<4.0
+djangorestframework>=3.12
+psycopg2-binary>=2.8   # Pour PostgreSQL
+django-redis>=5.0
+python-dotenv>=0.19   # Pour charger les variables d'environnement
+stripe>=2.60
+requests>=2.26
+django-cors-headers>=3.7
+django-silk>=4.1
+django-ratelimit>=3.0
+celery>=5.2
+django-celery-beat>=2.2
+PyPDF2>=1.26         # Optionnel: pour générer des PDF (ou reportlab)
+reportlab>=3.6
+psutil>=5.8
