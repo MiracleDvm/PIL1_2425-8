@@ -1,0 +1,60 @@
+version: '3.8'
+
+services:
+  # Service de base de données PostgreSQL
+  db:
+    image: postgres:13
+    container_name: ifri_db
+    restart: always
+    environment:
+      POSTGRES_DB: ifri_comotorage
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: adminpassword
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  # Service backend Django
+  backend:
+    build: ./backend
+    container_name: ifri_backend
+    command: gunicorn --workers=4 --bind=0.0.0.0:8000 backend.wsgi:application
+    restart: always
+    volumes:
+      - ./backend:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      # Variables d'environnement essentielles, à définir dans un fichier .env si besoin
+      DJANGO_SECRET_KEY: "your-secret-key"
+      DB_NAME: "ifri_comotorage"
+      DB_USER: "admin"
+      DB_PASSWORD: "adminpassword"
+      DB_HOST: "db"
+      DB_PORT: "5432"
+      STRIPE_SECRET_KEY: "your-stripe-secret-key"
+      PAYPAL_ACCESS_TOKEN: "your-paypal-access-token"
+      GOOGLE_MAPS_API_KEY: "YOUR_GOOGLE_MAPS_API_KEY"
+
+  # Service frontend Vue.js
+  frontend:
+    build: ./frontend
+    container_name: ifri_frontend
+    restart: always
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "8080:8080"
+    environment:
+      NODE_ENV: "development"
+      # Variables d'environnement pour les clés publiques éventuelles
+      VUE_APP_GOOGLE_MAPS_API_KEY: "YOUR_GOOGLE_MAPS_API_KEY"
+      VUE_APP_STRIPE_PUBLIC_KEY: "your-stripe-public-key"
+      VUE_APP_FIREBASE_API_KEY: "your-firebase-api-key"
+    # Si vous utilisez un build de production (par exemple avec npm run build) il faudra adapter la commande ici.
+
+volumes:
+  pgdata:
