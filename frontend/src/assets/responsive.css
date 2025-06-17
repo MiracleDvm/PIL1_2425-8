@@ -2,12 +2,12 @@
   .container {
       padding: 10px;
   }
-
+  /*
   .navbar {
       flex-direction: column;
       padding: 10px;
-  }
-
+  }*/
+  
   button {
       width: 100%;
   }
@@ -16,3 +16,4 @@
       padding: 15px;
   }
 }
+
