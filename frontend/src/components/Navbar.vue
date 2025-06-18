@@ -3,7 +3,7 @@
     <div class="nav_div"> <div class="bar"></div> <div class="bar"></div> <div class="bar"></div> </div>
     <nav class="navbar">
       <router-link to="/home" class="nav-link">Accueil</router-link>
-      <router-link to="/trips" class="nav-link">Trajets</router-link>
+      <router-link to="/trajets" class="nav-link link">Trajets</router-link>
       <router-link to="/reservations" class="nav-link">Réservations</router-link>
       <router-link to="/chat" class="nav-link link">Messages</router-link>
       <router-link to="/notifications" class="nav-link">Notifications</router-link>
