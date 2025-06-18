@@ -9,7 +9,7 @@
     </div>
     <form class="chat-input" @submit.prevent="sendMessage">
       <input v-model="newMessage" type="text" placeholder="Écrivez un message..." autocomplete="off" />
-      <button type="submit">Envoyer</button>
+      <button class="send" type="submit">Envoyer</button>
     </form>
   </div>
 </template>
@@ -66,8 +66,8 @@ export default {
 .chat-container {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  max-width: 400px;
+  height: 100vh;
+  max-width: 500px;
   margin: 0 auto;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -134,5 +134,8 @@ export default {
 }
 .chat-input button:hover {
   background: #40a9ff;
+}
+.send {
+  width: fit-content
 }
 </style>
