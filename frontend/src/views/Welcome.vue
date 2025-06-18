@@ -44,6 +44,22 @@ export default {
   font-size: 1.2rem;
   margin-top: 10px;
 }
+
+.flex_header {
+  display: flex;
+}
+.flex_header img {
+  margin: 0 54px;
+}
+@media screen and (max-width: 544px) {
+  .flex_header {
+    flex-direction: column;
+  }
+  .flex_header img {
+  margin: auto;
+  }
+}
+  
 .welcome-actions {
   margin-bottom: 32px;
   display: flex;
