@@ -50,7 +50,7 @@
 **1️⃣ Clonez le dépôt :**
 *bash*
 git clone https://github.com/MiracleDvm/PIL1_2425-8.git
-cd ifri-comotorage/backend
+cd backend
 
 **2️⃣ Créez un environnement virtuel et installez les dépendances :**
 *bash*
