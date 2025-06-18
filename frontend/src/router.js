@@ -9,7 +9,7 @@ import Paiements from './views/Paiements.vue';
 import Profile from './views/Profile.vue';
 import AdminDashboard from './views/AdminDashboard.vue';
 import Register from './views/Register.vue';
-import Chat from './components/Chat.vue';
+import Discussions from './views/Discussions.vue';
 import Trajets from './views/Trajets.vue';
 import store from './store';
 
@@ -21,7 +21,7 @@ const routes = [
   { path: '/dashboard', component: Dashboard, meta: { requiresAuth: true } },
   { path: '/reservations', component: Reservations, meta: { requiresAuth: true } },
   { path: '/trajets', component: Trajets, meta:   { requiresAuth: false } },
-  { path: '/chat', component: Chat, meta: { requiresAuth: true } },
+  { path: '/discussions', component: Discussions, meta: { requiresAuth: true } },
   { path: '/notifications', component: Notifications, meta: { requiresAuth: true } },
   { path: '/paiements', component: Paiements, meta: { requiresAuth: true } },
   { path: '/profile', component: Profile, meta: { requiresAuth: true } },
