@@ -88,6 +88,7 @@ docker-compose up --build
 Nous accueillons toutes les suggestions et contributions ! **✅ Forkez** le projet **✅ Créez une branche** pour vos modifications **✅ Ouvrez une pull request**
 
 Merci pour votre intérêt et votre soutien à **IFRI Comotorage ! 🚗💨**
-##**Index**
+
+## **Index**
 **Le rapport **
 Lien: https://github.com/MiracleDvm/PIL1_2425-8/blob/main/Rapport%20html
