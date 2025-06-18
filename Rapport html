@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Rapport de Projet – IFRI Comotorage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 40px;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2, h3 {
+      color: #1256a9;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    .highlight {
+      color: #2990b9;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Rapport de Projet – Application IFRI Comotorage</h1>
+
+    <section>
+      <h2>1. Introduction</h2>
+      <p>Le projet IFRI Comotorage s'inscrit dans le cadre des projets de fin d'année à l'IFRI. Face aux difficultés de transport rencontrées par les étudiants, il a été décidé de développer une application web favorisant le covoiturage entre étudiants.</p>
+    </section>
+
+    <section>
+      <h2>2. Présentation de l'application</h2>
+      <ul>
+        <li><span class="highlight">Nom :</span> IFRI Comotorage</li>
+        <li><span class="highlight">Type :</span> Application web de covoiturage</li>
+        <li><span class="highlight">Public cible :</span> Étudiants de l'IFRI</li>
+        <li><span class="highlight">Objectifs :</span> Solution économique,  respect de l'environnement, renforcement des liens sociaux</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Fonctionnalités principales</h2>
+      <ul>
+        <li>Inscription et connexion sécurisée</li>
+        <li>Création et consultation de trajets</li>
+        <li>Matching entre conducteurs et passagers</li>
+        <li>Messagerie intégrée</li>
+        <li>Gestion des profils</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Déroulement du projet</h2>
+      <p>Le projet a été réalisé par un groupe de 5 étudiants issus de diverses spécialités. Les tâches ont été réparties selon les compétences de chacun afin de garantir une progression fluide et efficace.Chacun a apporté ses connaissances pour aider à la réalisation du projet.Malheureusement un de nos membres Tatiana n'es venu qu'une seule fois lors de la première rencontre.Elle n'as pas du tt participer au travail ni donner de nouvelles.Cela n'a pas pertubé le travail pour autant  on a fait de notre mieux.</p>
+    </section>
+
+        <section>
+      <h2>5. Répartition des tâches par membre</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nom</th>
+            <th>Tâches réalisées</th>
+            <th>Période</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>AHOKOU Belline</td>
+            <td>Cahier de charge,Rapport,documentation,correction des bugs</td>
+            <td> 1 semaine</td>
+          </tr>
+          <tr>
+            <td>DOSSOU Miracle</td>
+            <td>Supervision du projet, suivi de l’avancement, intégration finale,Interface de connexion, backend Django, base de données,</td>
+            <td>2 semaines</td>
+          </tr>
+          <tr>
+            <td>OKPEITCHA Jaurès</td>
+            <td>Développement frontend : pages trajets, profil,documentation,Correction des bugs</td>
+            <td>2 semaines</td>
+          </tr>
+          <tr>
+            <td>WAIDI Wadoud</td>
+            <td>Réalisation du logo et documentation</td>
+            <td> 3 jours</td>
+          </tr>
+          <tr>
+            <td>AFOHINDE Ozias</td>
+            <td>Tests de l’application, détection et remontée de bugs</td>
+            <td>1 semaine </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>6. Technologies utilisées</h2>
+      <ul>
+        <li><span class="highlight">Frontend :</span> HTML, CSS, JavaScript,Python</li>
+        <li><span class="highlight">Backend :</span> Django</li>
+        <li><span class="highlight">Base de données :</span> PostgreSQL</li>
+        <li><span class="highlight">Outils :</span> GitHub, Canva, VS Code</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>7. Difficultés rencontrées</h2>
+      <ul>
+        <li>Synchronisation du travail entre membres</li>
+        <li>Choix technologiques et intégration</li>
+        <li>Respect du planning</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>8. Résultats obtenus</h2>
+      <ul>
+        <li>Application fonctionnelle avec une interface conviviale</li>
+        <li>Code structuré et bien commenté</li>
+        <li>Documentation claire</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>9. Conclusion</h2>
+      <p>Ce projet a permis de mettre en pratique nos compétences techniques et de gestion de projet. Il a renforcé notre esprit d’équipe et notre autonomie de meme que la communication entre nous. L’application peut être améliorée dans le futur avec une version mobile, un système de géolocalisation, et de nouvelles fonctionnalités communautaires.</p>
+    </section>
+  </div>
+</body>
+</html>
