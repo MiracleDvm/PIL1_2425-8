@@ -1,8 +1,14 @@
 <template>
   <div class="welcome">
     <header class="welcome-header">
-      <h1>Bienvenue sur IFRI Comotorage</h1>
-      <p>L'application qui connecte conducteurs et passagers pour optimiser vos trajets vers le campus IFRI.</p>
+      <div class="flex_header">
+        <img src="../img_logo/IMG-20250615-WA0005.jpg" alt="" height="100" width="100">
+        <div>
+          <h1>Bienvenue sur IFRI Comotorage</h1>
+          <br><br>
+          <p>L'application qui connecte conducteurs et passagers pour optimiser vos trajets vers le campus IFRI.</p>
+        </div>
+      </div>
     </header>
     <section class="welcome-actions">
       <router-link to="/login" class="welcome-link login">Se connecter</router-link>
