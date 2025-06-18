@@ -2,7 +2,10 @@
   <div class="chat-app">
     <!-- Barre latérale des conversations -->
     <div class="chat-sidebar">
-      <h3> Conversations </h3>
+	<div class="headin">
+		<img src="../img_logo/IMG-20250615-WA0005.jpg" alt="" height="32" width="32">
+		<h3> Conversations </h3>
+	</div>
       <ul class="conversation-list">
         <li 
         	v-for="conversation in conversations" 
@@ -143,6 +146,20 @@ export default {
 	text-align: center;
 }
 
+
+.headin {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 21px;
+	background-color: #6c757d;
+	margin-bottom: 21px;
+}
+.headin img {
+	border-radius: 45px;
+}
+
+	
 .conversation-list {
 	list-style: none;
 	padding: 0;
