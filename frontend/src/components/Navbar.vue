@@ -1,15 +1,13 @@
 <template>
   <div class="nav">
     <div class="nav_div"> <div class="bar"></div> <div class="bar"></div> <div class="bar"></div> </div>
-    <nav class="navbar"><!--
-      <router-link to="/" class="nav-link">Présentation</router-link>-->
+    <nav class="navbar">
       <router-link to="/home" class="nav-link">Accueil</router-link>
       <router-link to="/trips" class="nav-link">Trajets</router-link>
       <router-link to="/reservations" class="nav-link">Réservations</router-link>
+      <router-link to="/chat" class="nav-link link">Messages</router-link>
       <router-link to="/notifications" class="nav-link">Notifications</router-link>
-      <router-link to="/profile" class="nav-link">Profil</router-link><!--
-      <router-link to="/login" class="nav-link">Connexion</router-link>
-      <router-link to="/register" class="nav-link">Inscription</router-link>-->
+      <router-link to="/profile" class="nav-link">Profil</router-link>
     </nav>
   </div>
 </template>
