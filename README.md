@@ -42,7 +42,7 @@
 
 ### **Pré-requis**
 📌 **Node.js** installé  
-📌 **Python 3+** installé  
+📌 **Python 3+ (3.19.2 préférable)** installé  
 📌 **Docker** pour le déploiement  
 
 ### **Installation Backend**
