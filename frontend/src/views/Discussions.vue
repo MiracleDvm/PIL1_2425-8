@@ -34,7 +34,7 @@
 			</div>
 			<form class="chat-input" @submit.prevent = "sendMessage">
 				<input class="" type="text" v-model="newMessage" placeholder="Tapez votre message ..." required @keyup.enter="sendMessage">
-				<button type="submit" class="send-button">Yo
+				<button type="submit" class="send-button">
 					<!-- Utilisation d'une icone (paper plane) pour envoyer -->
 					<i class="bi bi-send-fill"></i>
 				</button>
@@ -52,7 +52,7 @@ export default {
 			newMessage: "",
 			// Liste des conversations.
 			conversations: [],
-			selectedConversation: "",/////////////======>>>>
+			selectedConversation: null,
 		};
 	},
 	methods: {
